@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^samplepage/', include('samplepage.urls')),
     url(r'^music/', include('music.urls')),
     url(r'^hospital_recommend_api/', include('hospital_recommend_api.urls')),
+    url(r'^knearest_api/', include('knearest_api.urls')),
 ]
 
 # if debug mode(developer env)
