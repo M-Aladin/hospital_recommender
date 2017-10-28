@@ -1,0 +1,25 @@
+{% extends 'hospital_recommend_api/base.html' %}
+{% block albums_active %}active{% endblock albums_active %}
+
+{% block body %}
+<div class="container-fluid">
+    <!-- Input -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Hello {{ user.username }}</h3>
+        </div>
+
+        <form action=# method="post" style="display: inline;">
+            {% csrf_token %}
+            <input type="hidden" name="album_id" value="xxx" />
+            <button type="submit" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-trash"></span>
+            </button>
+        </form>
+        
+
+    </div>
+
+</div>
+
+{% endblock body %}
